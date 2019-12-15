@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnPSC"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/txtPSCPrompt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:background="#179E9A"
+        android:onClick="loadPSC"
+        android:padding="10dp"
+        android:text="Digital\nForm"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnDAP"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/btnPSC"
+        android:layout_alignParentEnd="true"
+        android:background="#179E9A"
+        android:onClick="loadCamera"
+        android:padding="10dp"
+        android:text="Paper\nForm"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Method"
+        android:id="@+id/txtChooseMethod"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#0B5D51"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/txtPSCPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtChooseMethod"
+        android:layout_marginTop="51dp"
+        android:text="How do you want to record \n the student&apos;s answers?"
+        android:textAlignment="center"
+        android:textColor="#5D4F42"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPSCDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPSC"
+        android:layout_alignStart="@+id/btnPSC"
+        android:layout_alignEnd="@+id/btnPSC"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Let them answer\na digital form"
+        android:textAlignment="center"
+        android:textColor="#5D4F42"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnDAP"
+        android:layout_alignEnd="@+id/btnDAP"
+        android:layout_alignBottom="@+id/txtPSCDesc"
+        android:layout_marginStart="-2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="32dp"
+        android:padding="10dp"
+        android:text="Take a photo of\nthe paper form"
+        android:textAlignment="center"
+        android:textColor="#5D4F42"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

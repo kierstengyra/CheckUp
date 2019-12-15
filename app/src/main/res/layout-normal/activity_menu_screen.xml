@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnNewRecord"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="361dp"
+        android:background="#179E9A"
+        android:onClick="createRecord"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Create Student Record"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnNextStudent"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="194dp"
+        android:background="#179E9A"
+        android:onClick="selectRecord"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Choose from list"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtSchoolName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#0B5D51"
+        android:padding="15dp"
+        android:text="Mary Help of Christians College - Salesian Sisters, Inc."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="177dp"
+        android:text="What do you want to do next?"
+        android:textAlignment="center"
+        android:textColor="#958F83"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+

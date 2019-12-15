@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnNextStudent"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btnExit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:background="#179E9A"
+        android:onClick="nextStudent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Evaluate another student"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/btnNextStudent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="167dp"
+        android:background="#179E9A"
+        android:onClick="exit"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Exit App"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtLastPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Scores are recorded!\nWhat&apos;s the next step?"
+        android:textAlignment="center"
+        android:textColor="#5D4F42"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>

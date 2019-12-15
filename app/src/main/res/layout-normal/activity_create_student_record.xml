@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtHeadingCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_span="2"
+        android:background="#0B5D51"
+        android:padding="15dp"
+        android:text="Create Student Record"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="670dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeadingCreate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#19975D"
+        android:hint="First Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtMiddleName"
+        android:layout_width="670dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_alignStart="@+id/txtFirstName"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#19975D"
+        android:hint="Middle Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="670dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMiddleName"
+        android:layout_alignStart="@id/txtFirstName"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#19975D"
+        android:hint="Last Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtSuffix"
+        android:layout_width="670dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLastName"
+        android:layout_alignStart="@id/txtFirstName"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#19975D"
+        android:hint="Suffix"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioSex"
+        android:orientation="horizontal"
+        android:layout_alignStart="@id/txtFirstName"
+        android:layout_below="@id/txtSuffix"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:hint="Male"
+            android:text="Male"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:checked="false"
+            android:text="Female"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtBirthday"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioSex"
+        android:layout_alignStart="@+id/txtFirstName"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:text="Birthday"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinDay"
+        android:backgroundTint="#179E9A"
+        android:layout_below="@+id/txtBirthday"
+        android:layout_toEndOf="@+id/spinMonth"
+        android:layout_marginBottom="15dp" />
+
+    <Spinner
+        android:id="@+id/spinMonth"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/txtBirthday"
+        android:layout_alignStart="@+id/radioSex"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#179E9A" />
+
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinYear"
+        android:backgroundTint="#179E9A"
+        android:layout_toEndOf="@+id/spinDay"
+        android:layout_alignEnd="@+id/txtFirstName"
+        android:layout_below="@+id/txtBirthday"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/txtGrade"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinMonth"
+        android:layout_alignStart="@+id/txtFirstName"
+        android:hint="Grade Level"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtSection"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinDay"
+        android:layout_toEndOf="@+id/txtGrade"
+        android:hint="Section"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_below="@+id/txtGrade"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#179E9A"
+        android:onClick="onSubmit"
+        android:padding="10dp"
+        android:text="Add Student"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

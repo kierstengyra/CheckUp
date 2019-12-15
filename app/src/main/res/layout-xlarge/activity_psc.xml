@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/psc_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:padding="6dp">
+
+    <!--
+    Use when images are replaced with GIFs
+    <pl.droidsonroids.gif.GifTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/placeholder"-->
+    <!--/>-->
+
+    <Button
+        android:id="@+id/btnTnxOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:background="#179E9A"
+        android:onClick="okTnx"
+        android:padding="10dp"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnEditOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:layout_marginBottom="261dp"
+        android:background="#179E9A"
+        android:onClick="editOK"
+        android:padding="10dp"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnConfirmAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listSummary"
+        android:layout_centerHorizontal="true"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:background="#179E9A"
+        android:onClick="okTnx"
+        android:padding="10dp"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnTnxGets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnTnxOK"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:layout_toEndOf="@+id/btnSkip"
+        android:background="#179E9A"
+        android:onClick="okGets"
+        android:padding="10dp"
+        android:text="Oo"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnTnxNotGets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnTnxOK"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:layout_toStartOf="@+id/btnSkip"
+        android:background="#179E9A"
+        android:onClick="okGets"
+        android:padding="10dp"
+        android:text="Hindi"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtRemarks"
+        android:layout_centerHorizontal="true"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:layout_marginBottom="-100dp"
+        android:background="#CCCCCC"
+        android:onClick="highlightAnswer"
+        android:padding="10dp"
+        android:text="Hindi Masasagot"
+        android:textAllCaps="false"
+        android:textColor="#179E9A"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/txtQuestionNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#0B5D51"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/btnPrevQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnHindi"
+        android:layout_alignTop="@+id/btnNext"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:background="#179E9A"
+        android:onClick="prevQuestion"
+        android:padding="10dp"
+        android:text="Bumalik"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnMadalas"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:layout_marginBottom="240dp"
+        android:background="#179E9A"
+        android:onClick="nextQuestion"
+        android:padding="10dp"
+        android:text="Susunod"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQuestionNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Madaling magkasakit ang aking anak."
+        android:textAlignment="center"
+        android:textColor="#5D4F42"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btnHindi"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnMadalas"
+        android:onClick="highlightAnswer"
+        android:scaleType="fitXY"
+        android:src="@drawable/q1_1" />
+
+    <ImageView
+        android:id="@+id/btnMinsan"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/btnHindi"
+        android:layout_centerHorizontal="true"
+        android:onClick="highlightAnswer"
+        android:scaleType="fitXY"
+        android:src="@drawable/q1_1" />
+
+    <ImageView
+        android:id="@+id/btnMadalas"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="351dp"
+        android:onClick="highlightAnswer"
+        android:scaleType="fitXY"
+        android:src="@drawable/q1_1" />
+
+    <TextView
+        android:id="@+id/txtHindi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnHindi"
+        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/btnHindi"
+        android:layout_below="@+id/btnHindi"
+        android:onClick="highlightAnswer"
+        android:text="Hindi"
+        android:textAlignment="center"
+        android:textColor="#5D4F42"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtMinsan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnMinsan"
+        android:layout_alignStart="@+id/btnMinsan"
+        android:layout_below="@+id/btnMinsan"
+        android:onClick="highlightAnswer"
+        android:text="Minsan"
+        android:textAlignment="center"
+        android:textColor="#5D4F42"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtMadalas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnMadalas"
+        android:layout_alignStart="@+id/btnMadalas"
+        android:layout_below="@+id/btnMinsan"
+        android:onClick="highlightAnswer"
+        android:text="Madalas"
+        android:textAlignment="center"
+        android:textColor="#5D4F42"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtRemarks"
+        android:layout_width="wrap_content"
+        android:layout_height="294dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/txtMinsan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="350dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn_border_only"
+        android:ems="30"
+        android:gravity="top"
+        android:hint="Maglagay ng paliwanag"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:padding="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:textColor="@android:color/black" />
+
+    <ListView
+        android:id="@+id/listSummary"
+        android:layout_width="match_parent"
+        android:layout_height="937dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="264dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

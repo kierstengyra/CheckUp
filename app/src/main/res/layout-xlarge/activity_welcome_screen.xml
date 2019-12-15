@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter password to proceed"
+        android:id="@+id/txtEnterPassword"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="53sp"
+        android:textIsSelectable="true"
+        android:textColor="#5D4F42"
+        android:layout_marginTop="319dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:text="Go"
+        android:id="@+id/btnStart"
+        android:background="#179E9A"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="43sp"
+        android:onClick="verifyPassword"
+        android:layout_below="@+id/txtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:typeface="normal"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPassword"
+        android:hint="Password"
+        android:textSize="43sp"
+        android:typeface="normal"
+        android:singleLine="true"
+        android:layout_below="@+id/txtEnterPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+</RelativeLayout>

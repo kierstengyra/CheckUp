@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableStudentList"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rowHeading">
+
+            <TextView
+                android:id="@+id/txtHeadingChoose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#0B5D51"
+                android:padding="15dp"
+                android:text="Select Student Record"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rowList">
+
+            <ListView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/listStudents"
+                android:footerDividersEnabled="false"
+                android:divider="#72bf9c"
+                android:padding="5dp"
+                android:minHeight="20dp" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
